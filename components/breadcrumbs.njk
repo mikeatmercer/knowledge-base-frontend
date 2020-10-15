@@ -1,0 +1,8 @@
+{% macro breadcrumbs(crumbs=[]) %}
+<div class="kb-breadcrumbs kb-base-padding">
+  <a class="kb-breadcrumbs-a" href="">Mercer Link Home</a> > <a href="">Knowledge Base Home</a>
+  {% for crumb in crumbs %}
+     > <a class="kb-breadcrumbs-a" href="">{{crumb}}</a>
+  {% endfor %}
+</div>
+{% endmacro %}

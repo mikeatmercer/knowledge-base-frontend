@@ -1,1 +1,15 @@
-test
+<div id="kb-holder">
+<style>
+@import url("./main.css");
+</style>
+<div class="kb-inner">
+{% import './components/breadcrumbs.njk' as breadcrumbs %}
+{% from "./components/hero.njk" import hero %}
+{% block content %} {% endblock %}
+</div>
+
+
+
+<script src="main.js"></script>
+
+</div>

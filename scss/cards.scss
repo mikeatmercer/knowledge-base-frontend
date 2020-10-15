@@ -1,0 +1,88 @@
+.kb-cards {
+    &-container {
+        display:flex; 
+        flex-wrap: wrap;
+    }
+}
+
+.kb-card {
+    width: calc( (100% - (12px * 4) ) / 5);
+    background: white; 
+    border-top: none; 
+    position:relative; 
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    box-shadow: 0 2px 0 #003865 inset,0 -1px 0 #B9BFC7 inset, 1px 0px 0#B9BFC7 inset, -1px 0px 0 #B9BFC7 inset;
+    &:hover {
+        background: #E2F6FF;
+        cursor: pointer;
+        box-shadow: 2px 0 0 #0B6088 inset, -2px 0 0 #0B6088 inset, 0 2px 0 #0B6088 inset, 0 -2px 0 #0B6088 inset;
+    }
+    &:active {
+        box-shadow: 2px 0 0 #850144 inset, -2px 0 0 #850144 inset, 0 2px 0 #850144 inset, 0 -2px 0 #850144 inset;
+        .kb-card-title {
+            color: #850144;
+        }
+        
+    }
+    &:not(:nth-child(5n+1)) {
+        margin-left: 12px;
+    }
+    &-inner {
+        padding: 14px 13px 13px 13px;
+    }
+    &-title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #0B6088;
+        &--doc {
+            max-height: (20px * 3);
+        }
+    }
+    &-meta-text {
+        color:black;
+        font-size: 11px;
+        line-height: 16px;
+        display:block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &-desc {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 4px; 
+        &--doc {
+            max-height: (16px * 4);
+        }
+    }
+    &-doc {
+
+        &-header {
+            &-meta {
+                display:flex; 
+                align-items: center;
+                &-type {
+                    flex: 1;
+                    padding-left: 4px; 
+                }
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                    &--word {
+                        color: #0071C5;
+                    }
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+        &-date {
+            margin-top: 4px;
+            font-style: italic;
+        }
+    }
+}

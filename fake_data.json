@@ -1,0 +1,78 @@
+{
+    "homepage": {
+        "header" : {
+            "title" : "Mercer Brain",
+            "subTitle" : "about"
+        }
+        
+    },
+    "activityCards": [
+        {
+            "title": "Know the market",
+            "description": "Use megatrend discussion guides to understand disruptive macro forces and societal changes. ",
+            "ctaText": "See meagtrend discussion guides",
+            "imageURL" : "http://content.mercer.com/kb/Group%20206.png"
+        },
+        {
+            "title": "Understand client issues",
+            "description": "Use client issue discussion guides to prepare for client conversations on the most pressing challenges clients are facing today. ",
+            "ctaText": "See client issue discussion guides",
+            "imageURL" : "http://content.mercer.com/kb/Group%20206%20(1).png"
+        },
+        {
+            "title": "Propose the solution",
+            "description": "Use sales presentations, case studies, brochures and templates to determine and propose solutions that demonstrate Marsh & Mclennan capabilities.",
+            "ctaText": "See sales presentations, case studies, brochures and templates",
+            "imageURL" : "http://content.mercer.com/kb/Group%20206%20(2).png"
+        },
+        {
+            "title": "Collaborate and deliver solutions",
+            "description": "Find experts, tools and information you need to deliver a solution by visiting the Solutions Portfolio. ",
+            "ctaText": "Visit the Solutions Portfolio",
+            "imageURL" : "http://content.mercer.com/kb/Group%20206%20(3).png"
+        }
+    ],
+    "homeFilters": ["Client Issues", "Lines of Business", "Geography", "Geography"],
+    "homeFilterOptions": ["Banking/Financial Services", "Chemicals", "Consumer Goods", "Energy", "High Tech", "Banking/Financial Services", "Chemicals", "Consumer Goods", "Energy", "High Tech"],
+    "searchSuggestions": ["Pension Risk Management", "Pension Risk Exchange", "Uk pension risk ", "another one", "Pension Risk Management", "Pension Risk Exchange", "Uk pension risk ", "another one"],
+    "cardData": [
+        {
+            "type": "Case Study",
+            "fileType": "word",
+            "title" : "Reinvent Narrative for the New Shape of Work",
+            "desc": "Use this internal document for your conversations about Reinvent with your clients. Leverage the client deck together with this narrative.",
+            "business": "Health Business",
+            "pubDate": "10/9/2020"
+        },
+        {
+            "type": "Capabilities Presentation",
+            "fileType": "powerpoint",
+            "title" : "The New Shape of Work Flexing For The Future Capability Deck",
+            "desc": "Discussion about COVID-19 has challenged employer norms around flexible work in numerous ways. This deck includes our point of view and solution framework on flexible working",
+            "business": "Health Business",
+            "pubDate": "12/12/2020"
+        },
+        {
+            "type": "Consulting Guide",
+            "fileType": "pdf",
+            "title" : "Cost management : balancing costs and the employee experience",
+            "desc": "As businesses grapple with the impacts of the COVID-19 pandemic, cost deferrals and reductions measures to ensure business continuity is an important concern and focus for employers. With considerable economic uncertainty ahead, the need for cost management is here for the long-term so preserving employee experience along the way will be vital for recovery.",
+            "business": "Career Business",
+            "pubDate": "12/12/2020"
+        },
+        {
+            "type": "Tool",
+            "fileType": "excel",
+            "title" : "Mercers Online Flexibility Quotient Tool",
+            "desc": "Mercers Online Flexibility Quotient Tool",
+            "pubDate": "7/7/2019"
+        },
+        {
+            "type": "Client ready email",
+            "fileType": "email",
+            "title" : "The New Shape of Work: How to Transition to a New Normal (client ready email)",
+            "desc": "Client-ready email for promotion of the new shape of work.",
+            "pubDate": "7/7/2019"
+        }
+    ]
+}

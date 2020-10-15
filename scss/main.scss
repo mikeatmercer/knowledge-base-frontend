@@ -1,0 +1,53 @@
+
+$grid-w:( (1020px - ( 12px * 13) ) / 12  );
+$main-font-color: #383B3F;
+@mixin grid-width($columns) {
+    $gutter: 0;
+    @if($columns > 1) {
+        $gutter: ($columns - 1);
+    }
+    width: (($grid-w * $columns) + (12px * $gutter));
+  
+}
+
+#kb-holder, #kb-holder *, #kb-holder:before, #kb:after {
+    box-sizing: border-box;
+    img, svg {
+        display: block;
+    }
+}
+#kb-holder {
+    position: relative;
+    width: (1020px - 24px);
+    font-size: 14px;
+    color: $main-font-color;
+    line-height: (20/14);
+    .kb-inner {
+        position:relative;
+        width: calc(100% + 24px);
+        margin-left: -12px;
+    }
+}
+#content-header, body #sideNavBox {
+    display:none; 
+}
+#contentRow {
+    padding: 0 !important; 
+}
+#Div1.s4-titlerowhidetitle {
+    display: none;
+}
+#contentBox {
+    margin-left: 0;
+}
+#kb-holder {
+    @import "./utilities.scss";
+    @import "./gl-btn.scss";
+    @import "./breadcrumbs.scss";
+    @import "./hero.scss";
+    @import "./hpcard.scss";
+    @import "./home.scss";
+    @import "./hp-filters.scss";
+    @import "./searchbar.scss";
+    @import "./cards.scss";
+}

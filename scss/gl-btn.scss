@@ -1,0 +1,33 @@
+.kb-gl-btn , button.kb-gl-btn, input[type=button].kb-gl-btn{
+    cursor: pointer;
+    background: #0B6088;
+    color:white !important;  
+    display:inline-block;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 8px 6px 8px;
+    text-decoration: none !important;
+    position: relative;
+    font-weight: normal;
+    margin: 0;
+    border-width: 0;
+    font-size: inherit;
+    line-height: inherit;
+    &:hover, &:active {
+        &:after {
+            display:block;
+            content:'';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(white,.2);
+        }
+    }
+    &:active {
+        &:after {
+            background: rgba(white,.4);
+        }
+    }
+}

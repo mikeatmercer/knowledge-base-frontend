@@ -1,0 +1,57 @@
+{% extends "./index.html" %}
+
+{% block content %}
+
+{{breadcrumbs.breadcrumbs()}}
+
+{{hero("Mercer Brain", "Mercer Brain helps you find solutions from all of Mercer, including Mercer Marsh Benefits (MMB). It provides access to marketing, selling and learning content that was created in the last year. ", "http://content.mercer.com/kb/GettyImages-699084105%201.png")}}
+
+<div class="kb-base-padding">
+    <h2 class="kb-section-heading">Browse by activity</h2>
+    {% from "./components/homepageCards.njk" import homepagecard %}
+    <div class="kb-hpcard-container">
+    {% for card in activityCards %}
+
+        {{homepagecard(card.title, card.description, card.ctaText, card.imageURL)}}
+
+    {% endfor %}
+    </div>
+</div>
+
+<div class="kb-hp-center-container">
+    <h2 class="kb-section-heading">Filter all Mercer Brain content</h2>
+    <div class="kb-hp-filters-container">
+    {% from "./components/homepageFilters.njk" import homepageFilter %}
+    {% for filter in homeFilters %}
+
+        {{homepageFilter(filter, homeFilterOptions)}}
+
+    {% endfor %}
+        <div class="kb-hpfilter">
+            <a class="kb-hpfilter-btn kb-hpfilter-btn--cta">
+                <span class="kb-hpfilter-btn-text kb-hpfilter-btn-text--cta text-cutter"><span class="overflow">See all content</span></span>     
+            </a>
+        </div> 
+    </div>
+</div> 
+
+<div class="kb-hp-center-container">
+    <div class="kb-base-container">
+        <h2 class="kb-section-heading kb-section-heading--sm-margin">Search Mercer Brain</h2>
+        <div class="kb-subtitle">Search for consulting knowledge by issue, industry, geography, line of business, or keyword.</div>
+    {% from "./components/searchbar.njk" import searchBar %}
+        {{searchBar("","Examples: International, Poland, Career, OCIO, Technology", searchSuggestions)}}
+    </div>
+
+</div> 
+
+<div class="kb-base-padding">
+    <div class="kb-base-container">
+        {% from "./components/cards.njk" import cards %}
+        {{cards(cardData)}}
+    </div>
+
+</div>
+
+{% endblock %}
+

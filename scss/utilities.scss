@@ -1,0 +1,30 @@
+.kb-base-padding {
+    padding: 0 12px;
+}
+.kb-section-heading, h2.kb-section-heading {
+    color: black;
+    font-weight: bold; 
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 12px; 
+    &--sm-margin {
+        margin-bottom: 4px;
+    }
+}
+
+.kb-base-container {
+    border: 1px solid #B9BFC7;
+    border-radius: 20px; 
+    background: #F6F7F9;
+    padding: 24px 84px;
+    margin-bottom: 36px;
+}
+.kb-subtitle {
+    margin-bottom: 16px;
+}
+.kb-btn-a {
+    text-decoration: none !important;
+    &:visited {
+        color:inherit;
+    }
+}

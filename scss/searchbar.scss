@@ -1,0 +1,52 @@
+.kb-searchbar {
+    position:relative;
+    &-controls-container {
+        display:flex;
+        position: relative;
+    }
+    &-input {
+        &-container {
+            flex: 1; 
+            position: relative;  
+        }
+        display:block;
+        width: 100%; 
+        font-size: 14px;
+        line-height: 20px;
+        color: $main-font-color; 
+        padding: 8px 10px;
+        border: 1px solid #B9BFC7;
+        border-right: 0;
+        border-radius: 4px 0 0 4px; 
+        height: 38px;
+       
+    }
+    &-btn {
+        @include grid-width(2);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+    &-suggestions-holder {
+        position:absolute;
+        left: 0;
+        top: 100%;
+        width: 100%; 
+        background: white; 
+        border: 1px solid #B9BFC7;
+        border-top: 0;
+        z-index: 999;
+        display:none;
+    }
+    &-suggestion {
+        cursor: pointer;
+        color: #005A8E;
+        display:block;
+        padding: 8px;
+        &:not(:first-child) {
+            border-top: 1px solid #B9BFC7;
+        }
+        &:hover, &__focused {
+            background: #E2F6FF;
+        }
+    }
+}

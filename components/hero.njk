@@ -1,0 +1,12 @@
+{% macro hero(title="", description="", imageURL="" ,modifier="") %}
+<div class="kb-hero {%if imageURL  %}kb-hero-w-img{%endif %} {{modifier}}">
+    <div class="kb-hero-copy">
+        <h1 class="kb-hero-h1">{{title}} </h1>
+        <div class="kb-hero-description">{{description}}</div>
+    </div>
+    {% if imageURL %}
+         <div class="kb-hero-image"><img class="kb-hero-image-img" src="{{imageURL}}" /></div>
+    {% endif %}
+
+</div>
+{% endmacro %}

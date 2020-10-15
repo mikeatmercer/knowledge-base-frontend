@@ -1,0 +1,12 @@
+{% macro homepageFilter(title="test",options=["test1", "test2"]) %}
+
+<div class="kb-hpfilter">
+    <div class="kb-hpfilter-btn" title="{{title}}">
+        <span class="kb-hpfilter-btn-text text-cutter"><span class="overflow">{{title}}</span></span>
+        <span class="kb-hpfilter-btn-arrow">{% include "../assets/down-arrow.svg" %}</span>
+    </div>
+
+</div> 
+
+
+{% endmacro %}

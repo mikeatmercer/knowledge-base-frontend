@@ -1,0 +1,51 @@
+{% macro cards(cardArray=[], type="doc", rowLength=5) %}
+
+<div class="kb-cards-container kb-cards-container--gridspan-{{rowLength}}">
+
+{% for card in cardArray %}
+
+<div class="kb-card kb-card--{{type}} kb-card--gridspan-{{rowLength}}">
+    <div class="kb-card-inner cardClickContainer">
+
+    {% if type == "doc" %}
+        <div class="kb-card-doc-header">
+            <div class="kb-card-doc-header-meta">
+                <div class="kb-card-doc-header-meta-icon kb-card-doc-header-meta-icon--{{card.fileType}}">
+                    {% include "../assets/" +  card.fileType + "-icon.svg" %}
+                
+                </div>
+                <div class="kb-card-doc-header-meta-type kb-card-meta-text">
+                    {{card.type}}
+                </div>
+
+            </div>
+            <div class="kb-card-doc-header-business kb-card-meta-text">{{card.business}}</div>
+
+        </div> 
+
+    {%endif %}
+
+    <h2 class="kb-card-title kb-card-title--{{type}} {%if type == 'doc'  %}text-cutter{%endif %} ">
+        <a href="http://google.com" class="{%if type == 'doc'  %}overflow{%endif %} cardClickAction kb-btn-a">{{card.title}}</a>
+    </h2>
+    {% if type == "doc" %}
+        <div class="kb-card-doc-date kb-card-meta-text">Published on {{card.pubDate}}</div>
+    {% endif %}
+
+    <div class="kb-card-desc kb-card-desc--{{type}} {%if type == 'doc'  %}text-cutter{%endif %} ">
+        <div class="kb-card-desc-inner kb-card-desc-inner--{{type}} {%if type == 'doc'  %}overflow{%endif %} ">
+            {{card.desc}}
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+{%endfor%}
+
+
+</div>
+
+{% endmacro %}

@@ -1,0 +1,17 @@
+{% macro searchBar(value="", placeholder="Examples: International, Poland, Career, OCIO, Technology ", suggestions=[], modifier="") %}
+
+<div class="kb-searchbar kb-searchbar--{{modifier}}">
+    <div class="kb-searchbar-controls-container">
+        <div class="kb-searchbar-input-container">
+            <input class="kb-searchbar-input kb-searchbar-input--{{modifier}}" type="text" value="{{value}}" placeholder="{{placeholder}}" />
+            <div class="kb-searchbar-suggestions-holder">
+                    {% for suggestion in suggestions %}
+                        <a href="#" class="kb-btn-a kb-searchbar-suggestion" role="button">{{suggestion}}</a>
+                     {% endfor %}
+            </div>
+            
+        </div>
+        <a href="#" class="kb-searchbar-btn kb-searchbar-btn--{{modifier}} kb-gl-btn kb-gl-btn--{{modifier}}" role="button"><span>Search</span></a>
+    </div>
+</div>
+{% endmacro %}
